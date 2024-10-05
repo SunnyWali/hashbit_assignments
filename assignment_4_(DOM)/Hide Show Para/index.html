@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #useless-paragraph
+    {
+        font-size: 1.5rem;
+        background-color: red;
+        color: blue;
+    }
+
+    #button
+    {
+        background-color: black;
+        color: gold;
+    }
+
+    h1
+    {
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1> Hashbit Innovation </h1>
+        <p id="useless-paragraph"> I am an Intern at Hashbit Innovation </p>
+        <button onclick="hide_para()" id="button">
+            Toggle Button 
+        </button>
+        <script>
+            function hide_para()
+            {
+                var paragraph=document.getElementById('useless-paragraph');
+                if(paragraph.style.display==='none')
+            {
+                paragraph.style.display='block';
+            }
+            else
+            paragraph.style.display='none';
+            }
+        </script>
+    </div>
+</body>
+</html>
